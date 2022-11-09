@@ -49,10 +49,10 @@ def write_data(out_path,bills):
         csvwriter.writerows([bills])
 
 
-out_path = 'C:\\Users\\bryni\git\\python-training\\billing\\calculated_file.csv'
-json_path = "C:\\Users\\bryni\git\\python-training\\billing\\bills"
-csv_path = "C:\\Users\\bryni\git\\python-training\\billing\\masterdata\\products.csv"
-processed_path = "C:\\Users\\bryni\git\\python-training\\billing\\processed"
+out_path = 'billing\\calculated_file.csv'
+json_path = "billing\\bills"
+csv_path = "billing\\masterdata\\products.csv"
+processed_path = "billing\\processed"
 
 create_file(out_path)
 product_price = read_csv(csv_path)
