@@ -10,7 +10,7 @@ def create_file(out_path):
             # creating a csv writer object
             csvwriter = csv.writer(csvfile)
             # writing the fields
-            fields = ['bill_id', 'bill_date', 'store_id', 'total_amount']
+            fields = ['BillId', 'BillDate', 'StoreId', 'BillTotal']
             csvwriter.writerow(fields)
 
 
@@ -49,10 +49,10 @@ def write_data(out_path,bills):
         csvwriter.writerows([bills])
 
 
-out_path = 'billing\\calculated_file.csv'
-json_path = "billing\\bills"
-csv_path = "billing\\masterdata\\products.csv"
-processed_path = "billing\\processed"
+out_path = 'C:\\Users\\bryni\git\\python-training\\billing\\bills.csv'
+json_path = "C:\\Users\\bryni\git\\python-training\\billing\\bills"
+csv_path = "C:\\Users\\bryni\\git\\python-training\\billing\\masterdata\\products.csv"
+processed_path = "C:\\Users\\bryni\\git\\python-training\\billing\\processed"
 
 create_file(out_path)
 product_price = read_csv(csv_path)
